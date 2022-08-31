@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+		<link rel="manifest" href="logo/site.webmanifest">
+		<link rel="mask-icon" href="logo/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="/logo/favicon.ico">
+		<title>Fouro</title>
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+	<body>
+
+		<header class="header">
+			<div class="container header__container">
+				<div class="header__inner">
+					<a class="header__logo logo" href="#"><img src="images/Logo.png" alt="Логотип Компании"></a>
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__list-item"><a class="header__list-link" href="#">Услуги</a></li>
+							<li class="header__list-item"><a class="header__list-link" href="#">Кейсы</a></li>
+							<li class="header__list-item"><a class="header__list-link" href="#">О нас</a></li>
+							<li class="header__list-item"><a class="header__list-link" href="#">Отзывы</a></li>
+							<li class="header__list-item"><a class="header__list-link" href="#">Контакты</a></li>
+						</ul>
+					</nav>
+					<div class="menu__burger">
+						<span></span>
+					</div>
+					<div class="header__interaction" data-da=".header__menu,992,1">
+						<div class="header__interaction-mobile"><a href="tel:77777777777" class="header__interaction-mobile--link">+7(777)777-77-77</a></div>
+						<div class="header__interaction-btn">
+							<a class="header__interaction-btn--popup popup-link" href="#popup-login">
+								<span class="header__interaction-btn--image">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+										<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+											<path d="M 79.635 73.696 C 86.104 65.901 90 55.898 90 45 C 90 20.187 69.813 0 45 0 C 20.187 0 0 20.187 0 45 c 0 10.898 3.896 20.901 10.365 28.696 c 0.105 0.161 0.227 0.315 0.383 0.445 c 0.002 0.002 0.005 0.003 0.007 0.005 C 19.015 83.837 31.298 90 45 90 c 13.702 0 25.985 -6.163 34.245 -15.854 c 0.003 -0.002 0.005 -0.003 0.008 -0.005 C 79.408 74.01 79.53 73.857 79.635 73.696 z M 45 4 c 22.607 0 41 18.393 41 41 c 0 9.169 -3.026 17.645 -8.132 24.482 c -6.081 -6.505 -13.876 -10.99 -22.402 -13.023 c 6.497 -3.669 10.901 -10.629 10.901 -18.609 c 0 -11.782 -9.585 -21.367 -21.367 -21.367 c -11.782 0 -21.367 9.585 -21.367 21.367 c 0 7.979 4.404 14.939 10.901 18.608 c -8.526 2.033 -16.321 6.518 -22.402 13.023 C 7.026 62.645 4 54.169 4 45 C 4 22.393 22.393 4 45 4 z M 45 55.217 c -9.576 0 -17.367 -7.791 -17.367 -17.367 S 35.424 20.482 45 20.482 s 17.367 7.791 17.367 17.367 S 54.576 55.217 45 55.217 z M 45 86 c -11.986 0 -22.787 -5.171 -30.29 -13.399 C 22.48 64.079 33.418 59.217 45 59.217 c 11.581 0 22.52 4.863 30.29 13.384 C 67.787 80.829 56.986 86 45 86 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10;"/>
+										</g>
+									</svg>
+								</span>
+								<span class="header__interaction-btn--bottom">Войти</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="popup" id="popup-login">
+			<div class="popup__body">
+				<div class="popup__content login-content">
+					<div class="login__header">
+						<h3 class="login__title">Войти в Личный Кабинет</h3>
+						<a class="popup__close" href="#">&#10006</a>
+					</div>
+					<form class="login__form" id="form" action="#">
+						<div class="login__form-group">
+							<label for="log-email">Ваш Email</label>
+							<div class="login__form-inputBox">
+								<input type="email" id="log-email" name="email" placeholder="example.mail@gmail.com">
+							</div>
+							<span class="error-message"></span>
+						</div>
+						<div class="login__form-group">
+							<label for="log-password">Ваш Пароль</label>
+							<div class="login__form-inputBox">
+								<input class="login__form-password--inp" type="password" id="log-password" name="password" placeholder="Введите пароль">
+								<div class="login__form-password--btn">
+									<img class="eye--hide" src="images/icons/eye-hide.png" alt="Иконка глаза">
+									<img class="eye--show" src="images/icons/eye-show.png" alt="Иконка глаза">
+								</div>
+							</div>
+						</div>
+						<button class="login__form-btn" type="submit">Войти</button>
+					</form>
+					<div class="login__form-additionaly">
+						<a class="login__form-forgot" href="#">Забыли пароль?</a>
+						<a class="login__form-register" href="#">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</header>
+
+		<main class="main swiper" id="main">
+			<div class="main-bg">
+				<img src="images/main_bg.svg" alt="Задний Фон">
+			</div>
+			<div class="swiper-wrapper">
+				<seciotn class="header-content swiper-slide">
+					<div class="header-content__container container">
+						<div class="header-content__text">
+							<h1 class="header-content__title">
+								<span>DIgItAl</span> <br/> <span>MARketINg</span>
+							</h1>
+							<p class="header-content__descr">
+								Раскроем потенциал вашего бизнеса, благодаря комплексному подходу в продвижении
+							</p>
+						</div>
+						<div class="header-content__image">
+							<svg width="447" height="430" viewBox="0 0 447 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M278.98 205.327C280.314 206.097 280.314 208.021 278.98 208.791L209.098 249.138C207.765 249.907 206.098 248.945 206.098 247.406L206.098 166.712C206.098 165.173 207.765 164.21 209.098 164.98L278.98 205.327Z" fill="#B21414"/>
+								<path d="M445.35 235.437C445.35 296.246 430.896 344.612 401.392 377.767C371.906 410.902 327.25 429 266.502 429C205.824 429 139.417 401.952 88.1742 359.676C36.9255 317.395 1 260.019 1 199.468C1 138.955 36.8834 89.3617 88.0967 54.85C139.312 20.3367 205.742 1 266.502 1C327.091 1 371.756 29.1936 401.313 72.5686C430.894 115.98 445.35 174.626 445.35 235.437Z" fill="#B21414" fill-opacity="0.03" stroke="#B21414" stroke-width="2"/>
+							</svg>
+						</div>
+					</div>
+					<div class="scroll-mouse">
+						<svg width="18" height="28" viewBox="0 0 18 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<title>Проскрольте вниз</title>
+							<rect x="0.5" y="0.5" width="17" height="27" rx="8.5" fill="white" stroke="#191C27"/>
+							<circle cx="9" cy="7" r="2" fill="#191C27"/>
+						</svg>
+						<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L9.31338 8.85152C9.69877 9.2155 10.3012 9.2155 10.6866 8.85152L19 1" stroke="#191C27" stroke-linecap="round"/>
+						</svg>
+						<svg width="20" height="10" viewBox="0 0 20 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 1L9.31338 8.85152C9.69877 9.2155 10.3012 9.2155 10.6866 8.85152L19 1" stroke="#191C27" stroke-linecap="round"/>
+						</svg>
+					</div>
+				</seciotn>
+				<section class="busier swiper-slide ">
+					<div class="busier__container container">
+						<div class="busier__text">
+							<p class="busier__descr">Занимается продвижением оффлайн-брендов в цифровой среде. Основываясь на анализе аудитории, продукта и конкурентов, предлагаем комплексные услуги для вашего бизнеса: от разработки стратегии продвижения до ее реализации.</p>
+						</div>
+						<div class="busier__inner swiper-no-swiping">
+							<div class="busier__item">
+								<span>#Разработка сайтов</span>
+							</div>
+							<div class="busier__item">
+								<span>#Digital-стратегия</span>
+							</div>
+							<div class="busier__item">
+								<span>#Аналитика</span>
+							</div>
+							<div class="busier__item">
+								<span>#Аудит</span>
+							</div>
+							<div class="busier__item">
+								<span>#Анализ конкурентов</span>
+							</div>
+							<div class="busier__item">
+								<span>#SMM</span>
+							</div>
+							<div class="busier__item">
+								<span>#Таргетированная реклама</span>
+							</div>
+							<div class="busier__item">
+								<span>#SEO</span>
+							</div>
+							<div class="busier__item">
+								<span>#Контекстная реклама</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="we swiper-slide">
+					<div class="we__container container">
+						<div class="we__wrapper">
+							<h2 class="we__title title">Агентство <span>FOURO</span></h2>
+							<div class="we__text swiper-no-swiping">
+								<p class="we__descr">
+									– команда профессионалов-единомышленников в области digital-маркетинга, фанатеющих от своей работы.
+								</p>
+								<p class="we__descr">
+									Философия нашего агентства проста – создавать эффективные проекты по продвижению бизнеса в цифровой среде.
+								</p>
+							</div>
+							<div class="we__btns">
+								<a class="we__btn button" href="#">
+									<span>заказать</span>
+									<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM0 4.5H16V3.5H0V4.5Z" fill="white"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="development swiper-slide">
+					<div class="development__container container">
+						<div class="development__inner">
+							<div class="development__text">
+								<h2 class="development__title title">разработка сайтов</h2>
+								<p class="development__descr swiper-no-swiping">Умеем не просто делать новые сайты, или производить апгрейд текущих – мы делаем инструменты для привлечения клиентов и зарабатывания денег.</p>
+								<div class="development__btns swiper-no-swiping">
+									<a class="development__btn button" href="#">
+										<span>заказать</span>
+										<svg width="17" height="8" viewBox="0 0 17 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M16.3536 4.35355C16.5488 4.15829 16.5488 3.84171 16.3536 3.64645L13.1716 0.464466C12.9763 0.269204 12.6597 0.269204 12.4645 0.464466C12.2692 0.659728 12.2692 0.976311 12.4645 1.17157L15.2929 4L12.4645 6.82843C12.2692 7.02369 12.2692 7.34027 12.4645 7.53553C12.6597 7.7308 12.9763 7.7308 13.1716 7.53553L16.3536 4.35355ZM0 4.5H16V3.5H0V4.5Z" fill="white"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="development__image"><img class="swiper-no-swiping" src="images/development_image-1.png" alt="Изображение Компьютера с разработкой сайтов"></div>
+						</div>
+					</div>
+				</section>
+
+			</div>
+
+				<div class="swiper-pagination"></div>
+				<div class="swiper-scrollbar"></div>
+		</main>
+
+		<!-- <a href="https://www.flaticon.com/ru/free-icons/" title="глаз иконки">Глаз иконки от Rahul Kaklotar - Flaticon</a> -->
+		<!-- <a href="https://www.flaticon.com/ru/free-icons/-" title="пароль для глаз иконки">Пароль для глаз иконки от rukanicon - Flaticon</a> -->
+		<script src="js/libs.min.js" defer></script>
+		<script src="js/main.js" defer></script>
+	</body>
+</html>
