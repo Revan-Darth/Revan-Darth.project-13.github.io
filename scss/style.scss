@@ -805,6 +805,52 @@ body._pc{
 	}
 }
 
+.reviews {
+	opacity: 0;
+	visibility: hidden;
+	transition: .3s;
+	&.swiper-slide-active{
+		opacity: 1;
+		visibility: visible;
+	}
+	&__container {
+		@include adaptive-value("padding-top", 150, 75, 1);
+	}
+	&__title{
+		@include adaptive-value("margin-bottom", 35, 15, 1);
+	}
+	&__wrapper {}
+	&__review {
+		@include adaptive-value("padding-top", 40, 20, 1);
+		@include adaptive-value("padding-right", 35, 15, 1);
+		@include adaptive-value("padding-bottom", 40, 20, 1);
+		@include adaptive-value("padding-left", 35, 15, 1);
+		border-radius: 20px;
+		background-color: #e0e1e3;
+		color: #191C27;
+	}
+	&__review-body {}
+	&__review-company {
+		@include adaptive-font(18, 16);
+		line-height: 140%;
+		font-weight: 500;
+		@include adaptive-value("margin-bottom", 20, 10, 1);
+	}
+	&__review-text {
+		@include adaptive-font(16, 14);
+		line-height: 145%;
+		@include adaptive-value("margin-bottom", 25, 15, 1);
+	}
+	&__review-descr {}
+	&__review-supervisor {
+		@include adaptive-font(16, 14);
+		line-height: 145%;
+	}
+	&__btns{
+		@include adaptive-value("margin-top", 25, 15, 1);
+		display: inline-block;
+	}
+}
 
 
 @import 'media';

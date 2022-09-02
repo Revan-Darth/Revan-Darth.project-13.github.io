@@ -402,6 +402,26 @@ new Swiper('.main', {
     	slideShadows: false,
     },
     autoHeight: true,
-    nested: true,
 });
-
+new Swiper('.reviews__wrapper', {
+	grabCursor: true,
+    slidesPerView: 1.1,
+    spaceBetween: 20,
+    autoHeight: true,
+    nested: true,
+    slideToClickedSlide: false,
+    a11y: {
+    	prevSlideMessage: 'Previous slide',
+    	nextSlideMessage: 'Next slide',
+    	firstSlideMessage: 	'This is the first slide',
+    	lastSlideMessage: 	'This is the last slide',
+  	},
+  	breakpoints: {
+  		1260:{
+  			slidesPerView: 2.6,
+  		},
+  		992:{
+  			slidesPerView: 2,
+  		},
+  	}
+});
