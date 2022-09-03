@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta name="msapplication-TileColor" content="#da532c">
 		<meta name="theme-color" content="#ffffff">
 		<link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
@@ -341,7 +340,7 @@
 				</section>
 				<section class="reviews swiper-slide">
 					<div class="reviews__container container">
-						<h2 class="reviews__title title">Отзывы</h2>
+						<h2 class="reviews__title title swiper-no-swiping">Отзывы</h2>
 						<div class="reviews__wrapper swiper">
 							<div class="swiper-wrapper">
 								<div class="reviews__review swiper-slide">
@@ -396,14 +395,83 @@
 								</div> -->
 							</div>
 						</div>
-						<div class="reviews__btns">
+						<div class="reviews__btns swiper-no-swiping">
 							<a class="reviews__btn button" href="#">
 								<span>все отзывы</span>
 							</a>
 						</div>
 					</div>
 				</section>
-
+				<section class="disscusion swiper-slide">
+					<div class="disscusion__container container">
+						<h2 class="disscusion__title title">Давайте обсудим ваш проект</h2>
+						<div class="disscusion__form-wrapper">
+							<form class="disscusion__form" action="#">
+								<div class="disscusion__inputBox swiper-no-swiping">
+									<label class="disscusion__lab">
+										<input type="text" class="disscusion__inp" placeholder="Имя">
+										<span class="disscusion__inp-ico">
+											<svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M7 0C4.56586 0 2.59259 1.95716 2.59259 4.37143C2.59259 6.7857 4.56586 8.74286 7 8.74286C9.43414 8.74286 11.4074 6.7857 11.4074 4.37143C11.4074 1.95716 9.43414 0 7 0Z" fill="#707070"/>
+												<path d="M9.60096 10.6877C7.87789 10.4149 6.12211 10.4149 4.39904 10.6877L4.21435 10.7169C1.78647 11.1012 0 13.1783 0 15.6168C0 16.933 1.07576 18 2.40278 18H11.5972C12.9242 18 14 16.933 14 15.6168C14 13.1783 12.2135 11.1012 9.78565 10.7169L9.60096 10.6877Z" fill="#707070"/>
+											</svg>
+										</span>
+									</label>
+								</div>
+								<div class="disscusion__inputBox swiper-no-swiping">
+									<label class="disscusion__lab">
+										<input type="tel" class="disscusion__inp" placeholder="Телефон">
+										<span class="disscusion__inp-ico">
+											<svg width="14" height="22" viewBox="0 0 14 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 4.5C0 2.29086 1.79086 0.5 4 0.5H10C12.2091 0.5 14 2.29086 14 4.5V11V17.5C14 19.7091 12.2091 21.5 10 21.5H4C1.79086 21.5 0 19.7091 0 17.5V4.5Z" fill="#707070"/>
+												<circle cx="7.00043" cy="16.4448" r="1.27778" fill="#E7E8EA" stroke="#E7E8EA"/>
+											</svg>
+										</span>
+									</label>
+								</div>
+								<div class="disscusion__inputBox swiper-no-swiping disscusion__inputBox--textar">
+									<label class="disscusion__lab">
+										<textarea class="disscusion__texar" placeholder="Комментарий"></textarea>
+										<span class="disscusion__inp-ico">
+											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M6.31745 0.324806C3.34246 0.997381 1.00813 3.28371 0.291932 6.22642C-0.0996878 7.83551 -0.0961099 9.52868 0.29551 11.1378C1.0229 14.1265 3.16258 16.6138 6.03293 17.7728L6.15805 17.8233C7.40016 18.3249 8.82306 17.7208 9.33273 16.4902C9.473 16.1515 9.80701 15.9268 10.1761 15.9268H11.2999C14.3564 15.9268 17.0154 13.8499 17.7328 10.9021C18.0891 9.43822 18.0891 7.91126 17.7328 6.44741L17.6387 6.06088C16.9472 3.21958 14.6933 1.01204 11.8209 0.362642L11.4173 0.271414C9.81661 -0.0904711 8.15434 -0.0904714 6.55362 0.271413L6.31745 0.324806ZM5.50194 5.36669C5.11716 5.36669 4.80524 5.67616 4.80524 6.05792C4.80524 6.43968 5.11716 6.74916 5.50194 6.74916H11.8884C12.2732 6.74916 12.5851 6.43968 12.5851 6.05792C12.5851 5.67616 12.2732 5.36669 11.8884 5.36669H5.50194ZM6.66312 8.82285C6.27834 8.82285 5.96642 9.13233 5.96642 9.51409C5.96642 9.89585 6.27834 10.2053 6.66312 10.2053H10.7272C11.112 10.2053 11.4239 9.89585 11.4239 9.51409C11.4239 9.13233 11.112 8.82285 10.7272 8.82285H6.66312Z" fill="#707070"/>
+											</svg>
+										</span>
+									</label>
+								</div>
+								<p class="disscusion__descr">Нажав на кнопку, соглашаюсь на обработку персональных данных</p>
+								<button class="disscusion__btn button" type="submit">Отправить</button>
+							</form>
+						</div>
+					</div>
+				</section>
+				<footer class="footer swiper-slide">
+					<div class="footer__container">
+						<div class="footer__box footer__main">
+							<a class="footer__logo logo" href="#"><img src="images/Logo.png" alt="Логотип Компании"></a>
+							<a class="footer__policy" href="#">Политика конфиденциальности</a>
+							<span class="footer__copy">2022 © Copyright by Revan-Darth</span>
+						</div>
+						<div class="footer__box swiper-no-swiping">
+							<span class="footer__title">уСЛуГи</span>
+							<ul class="footer__list">
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Создание сайтов</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Контекстная реклама</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">SEO</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Digital-стратегия</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">SMM</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Аналитика</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Анализ конкурентов</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Таргетированная реклама</a></li>
+								<li class="footer__list-item"><a class="footer__list-link" href="#">Аудит</a></li>
+							</ul>
+						</div>
+						<div class="footer__box footer__contacts">
+							<a href="tel:77777777777" class="footer__contacts-link footer__link-tel">+7(777)777-77-77</a>
+							<a href="mailto:info@fouro.ru" class="footer__contacts-link footer__link-mail">info@fouro.ru</a>
+						</div>
+					</div>
+				</footer>
 			</div>
 
 			<div class="swiper-pagination"></div>

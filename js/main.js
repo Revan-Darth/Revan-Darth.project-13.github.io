@@ -374,54 +374,54 @@
 
 	const daAdaptive = new DynamicAdapt("max");
 	daAdaptive.init();
+// Слайдер
+	new Swiper('.main', {
+		direction: 'vertical',
 
-new Swiper('.main', {
-	direction: 'vertical',
+		// pagination: {
+		// 	el: '.swiper-pagination',
+		// 	type: 'progressbar'
+		// },
 
-	// pagination: {
-	// 	el: '.swiper-pagination',
-	// 	type: 'progressbar'
-	// },
+		scrollbar: {
+	    	el: '.swiper-scrollbar',
+	    	draggable: true,
+	  	},
 
-	scrollbar: {
-    	el: '.swiper-scrollbar',
-    	draggable: true,
-  	},
+	  	keyboard: {
+	  		enabled: true,
+	  		onlyInViewport: true,
+	  		pageUpDown: true,
+	  	},
 
-  	keyboard: {
-  		enabled: true,
-  		onlyInViewport: true,
-  		pageUpDown: true,
-  	},
-
-  	mousewheel: {
-  		sensitivity: 1,
-  	},
-  	effect: 'flip',
-  	flipEffect: {
-    	slideShadows: false,
-    },
-    autoHeight: true,
-});
-new Swiper('.reviews__wrapper', {
-	grabCursor: true,
-    slidesPerView: 1.1,
-    spaceBetween: 20,
-    autoHeight: true,
-    nested: true,
-    slideToClickedSlide: false,
-    a11y: {
-    	prevSlideMessage: 'Previous slide',
-    	nextSlideMessage: 'Next slide',
-    	firstSlideMessage: 	'This is the first slide',
-    	lastSlideMessage: 	'This is the last slide',
-  	},
-  	breakpoints: {
-  		1260:{
-  			slidesPerView: 2.6,
-  		},
-  		992:{
-  			slidesPerView: 2,
-  		},
-  	}
-});
+	  	mousewheel: {
+	  		sensitivity: 1,
+	  	},
+	  	effect: 'flip',
+	  	flipEffect: {
+	    	slideShadows: false,
+	    },
+	    autoHeight: true,
+	});
+	new Swiper('.reviews__wrapper', {
+		grabCursor: true,
+	    slidesPerView: 1.1,
+	    spaceBetween: 20,
+	    autoHeight: true,
+	    nested: true,
+	    slideToClickedSlide: false,
+	    a11y: {
+	    	prevSlideMessage: 'Previous slide',
+	    	nextSlideMessage: 'Next slide',
+	    	firstSlideMessage: 	'This is the first slide',
+	    	lastSlideMessage: 	'This is the last slide',
+	  	},
+	  	breakpoints: {
+	  		1260:{
+	  			slidesPerView: 2.6,
+	  		},
+	  		992:{
+	  			slidesPerView: 2,
+	  		},
+	  	}
+	});
