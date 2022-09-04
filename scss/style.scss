@@ -997,4 +997,28 @@ body._pc{
 	&__link-mail {}
 }
 
+.work {
+	background-image: url('../images/your-project_bg.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	background-color: #191C27;
+	&__container {
+		@include adaptive-value("padding-top", 200, 85, 1);
+	}
+	&__text {
+		max-width: 705px;
+	}
+	&__title {
+		color: #b21414;
+		@include adaptive-value("margin-bottom", 25, 10, 1);
+	}
+	&__descr {
+		@include adaptive-font(30, 18);
+		@include adaptive-value("margin-bottom", 35, 15, 1);
+	}
+	&__link {
+		display: inline-block;
+	}
+}
+
 @import 'media';
